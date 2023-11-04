@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sage & Salt</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style1.css') }}">
+</head>
+<body>
+    
+        <header>
+            <div class="head">
+                <a href="#" class="logo">Sage & Salt</a>
+                <nav>
+                    <a href="{{ url_for('menu') }}">Menu</a>
+                    <a href="{{ url_for('contact') }}">Contact us</a>
+                    <a href="{{ url_for('contact') }}">Help</a>
+
+
+
+                </nav> 
+            </div>
+
+        </header>
+        <div class="sec">
+            <div class="tt">
+                <h1>Welcome To Sage & Salt</h1>
+                <br>
+                <br>
+                <p>"A recipe has no soul.You as the cook , must bring soul to recipe". <br> Order from Top & This resaurant With a wide collection of  cuisines. So why are you waiting lets check out the page</p>
+                <a href="{{url_for('menu') }}"><button class="button">Check Out</button></a>
+
+            </div>
+            
+        </div>
+
+
+
+
+
+       
+      
+    
+</body>
+</html>

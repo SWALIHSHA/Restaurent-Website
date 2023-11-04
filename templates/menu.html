@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style2.css')}}">
+    <script src="{{ url_for('static', filename='search.js') }}"></script>
+    
+</head>
+<body>
+    
+    
+    <header>
+        <div class="head">
+            <a class="logo">Sage & Salt</a>
+            <nav>
+                
+                <a href="{{ url_for('index') }}">Home</a>
+                <a href="{{ url_for('menu') }}">Menu</a>
+                <a href="{{ url_for('contact') }}">Contact us</a>
+                <a href="{{ url_for('contact') }}">Help</a>
+            </nav> 
+        </div>
+
+    </header>
+    <div class="sec">
+        <div class="text">
+            <h1>Sage & Salt</h1>
+            
+                  <input type="text" class="search-bar" id="find" placeholder="Search" onkeyup="search()">
+            
+        </div>
+        <!--  -->
+        <div class="product-list">
+          
+            
+                <div class="product">
+                    <form action="{{url_for('order')}}" method="post">
+                        <img src="{{ url_for('static', filename='chicken_biriyani.jpg') }}" >
+                        <h3>Chicken Biriyani</h3>
+                        <input type="text" id="f2" name="f2" value="Chicken Biriyani" hidden>
+                        
+                        <button>Order</button>
+                    </form>
+                </div>
+           
+            <div class="product">
+                <form action="{{url_for('order')}}" method="post">
+                <img src="{{ url_for('static', filename='chicken_curry.jpg') }}" alt="" >
+                <h3>Chicken Curry</h3>
+                <input type="text" id="f2" name="f2" value="Chicken Curry" hidden>
+                
+                <button>Order</button></a>
+                </form>
+            </div>
+            <div class="product">
+
+                <form action="{{url_for('order')}}" method="post">     
+               <img src="{{ url_for('static', filename='mandi.jpg') }}" alt="" >
+                <h3>Mandi</h3>
+                <input type="text" id="f2" name="f2" value="Mandi" hidden>
+                
+                <button>Order</button></a>
+                </form>
+            
+            </div>
+            <div class="product">
+                <form action="{{url_for('order')}}" method="post">
+                <img src="{{ url_for('static', filename='al faham 2.jpg') }}" alt="" >
+                <h3>Al Faham 2 piece</h3>
+                <input type="text" id="f2" name="f2" value="Al Faham(2 pieces)" hidden>
+                
+                <button>Order</button></a>
+                </form>
+            </div>
+            <div class="product">
+                <form action="{{url_for('order')}}" method="post">
+                <img src="{{ url_for('static', filename='pasta.jpg') }}" alt="" >
+                <h3>Pasta</h3>
+                <input type="text" id="f2" name="f2" value="Pasta" hidden>
+                
+                <button>Order</button></a>
+                </form>
+            </div>
+            <div class="product">
+                <form action="{{url_for('order')}}" method="post">
+                <img src="{{ url_for('static', filename='porotta.jpg') }}" alt="" >
+                <h3>Porotta</h3>
+                
+                <input type="text" id="f2" name="f2" value="Porotta" hidden>
+                <button>Order</button></a>
+                </form>
+            </div>
+            <div class="product">
+                <form action="{{url_for('order')}}" method="post">
+                <img src="{{ url_for('static', filename='al faham.jpg') }}" alt="" >
+                <h3>Al Faham</h3>
+                
+                <input type="text" id="f2" name="f2" value="Al Faham" hidden>
+                <button>Order</button></a>
+                </form>
+            </div>
+            <div class="product">
+                <form action="{{url_for('order')}}" method="post">
+                <img src="{{ url_for('static', filename='al faham 2.jpg') }}" alt="" >
+                <h3>Vegetable Biryani</h3>
+                <input type="text" id="f2" name="f2" value="Vegetable Biriyani" hidden>
+                
+                <button>Order</button></a>
+                </form>
+            </div>
+            <div class="product">
+                <form action="{{url_for('order')}}" method="post">
+                <img src="{{ url_for('static', filename='shawaya.jpg') }}" alt="" >
+                <h3>shawaya</h3>
+                
+                <input type="text" id="f2" name="f2" value="Shawaya" hidden>
+                <button>Order</button></a>
+                </form>
+            </div>
+            <div class="product">
+                <form action="{{url_for('order')}}" method="post">
+                <img src="{{ url_for('static', filename='crab crry.jpg') }}" alt="" >
+                <h3>Crab Curry</h3>
+                <input type="text" id="f2" name="f2" value="Crab Curry" hidden>
+                
+                <button>Order</button></a>
+                </form>
+            </div>
+            <div class="product">
+                <form action="{{url_for('order')}}" method="post">
+                <img src="{{ url_for('static', filename='fish 1.webp') }}" alt="" >
+                <h3>Fish Curry</h3>
+                <input type="text" id="f2" name="f2" value="Fish Curry" hidden>
+                
+
+                <button>Order</button></a>
+                </form>
+            </div>
+            <div class="product">
+                <form action="{{url_for('order')}}" method="post">
+                <img src="{{ url_for('static', filename='fish 2.jpg') }}" alt="" >
+                <h3>Duck Curry</h3>
+                <input type="text" id="f2" name="f2" value="Duck Curry" hidden>
+                
+                <button>Order</button></a>
+                </form>
+            </div>
+            <div class="product">
+                <form action="{{url_for('order')}}" method="post">
+                <img src="{{ url_for('static', filename='mutton.jpg') }}" alt="" >
+                <h3>Mutton Biryani</h3>
+                <input type="text" id="f2" name="f2" value="Mutton Biriyani" hidden>
+                
+                <button>Order</button></a>
+                </form>
+            </div>
+            <div class="product">
+                <form action="{{url_for('order')}}" method="post">
+                <img src="{{ url_for('static', filename='fish 1.webp') }}" alt="" >
+                <h3>Prawns Curry</h3>
+                <input type="text" id="f2" name="f2" value="Prawns Curry" hidden>
+                
+                <button>Order</button></a>
+                </form>
+            </div>
+        </form>
+
+        </div>
+
+        
+        
+
+    </div>
+    
+    
+    
+</body>
+</html>

@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+
+.sec{
+
+    min-height: 1000px;
+    background: url(first.png) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+    
+}
+
+header{
+    width: 100%;
+    padding: 20px;
+    top: 0;
+    background: rgb(46, 43, 43,2);
+    position: fixed;
+    
+}
+header .head{
+    display: flex;
+    justify-content: space-between;
+}
+header a{
+    text-decoration: none;
+    margin-right: 70px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-size: 18px;
+    color: green;
+    
+    
+    
+}
+.tt{
+    position: absolute;
+    right: 300px;
+    width: 600px;
+    padding: 10px;
+    top: 200px;
+    
+
+}
+h1{
+    font-size: 48px;
+    color: green;
+    font-family: monospace;
+    text-rendering: geometricPrecision;
+   
+    
+}
+p{
+    color: aliceblue;
+    font-size: 28px;
+    
+}
+.logo{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 28px;
+    color: green;
+}
+.button{
+    width: 120px;
+    height: 50px;
+    margin-left: 200px;
+    margin-top: 50px;
+    color:white;
+    background: green;
+    border-radius: 30px;
+    font-family: monospace;
+    border: none;
+    
+
+}
+@media screen and (max-width:500px){
+    .sec{
+        background: url(responsive.jpg);
+    }
+    header{
+        padding: 10px;
+    }
+    header .head{
+        justify-content: none;
+    }
+    header a{
+        margin-right: 0px;
+    }
+    h1{
+        font-size: 36px;
+        margin-left: 90%;
+        margin-bottom: 20px;
+        color: white;
+        justify-content: end;
+        
+    }
+    p{
+        color: green;
+        margin-left: 90%;
+        font-size: 18px;
+        
+
+    }
+    .button{
+        margin-left: 90%;
+    }
+    .sec{
+        width: 800px;
+        height: 1700px;
+    }
+
+
+}

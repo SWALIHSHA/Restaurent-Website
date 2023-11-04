@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+header{
+    width: 99%;
+    padding: 20px;
+    top: 0;
+    background: rgb(46,43,43,2);
+    
+    
+}
+nav a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: green;
+    transition: .3s;
+}
+nav a:hover::before{
+    width: 100%;
+}
+header .head{
+    display: flex;
+    justify-content: space-between;
+}
+header a{
+    text-decoration: none;
+    margin-right: 70px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    color: green;
+}
+header a:hover{
+    color: white;
+}
+.sec{
+    width: 100%;
+    height: 1000px;
+    background: rgb(0, 14, 14);
+    align-items: center;
+    position: fixed;
+}
+#contact{
+    align-items: center;
+    text-align: center;
+    margin-top: 200px;
+    text-align: center;
+}
+.form-control{
+    width: 400px;
+    height: 40px;
+    border: none;
+    outline: none;
+    
+    
+
+}
+input::placeholder{
+    color: green;
+}
+button{
+    width: 80px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    background:green ;
+    
+    
+    
+
+}
+button:hover{
+    width: 85px;
+    height: 35px;
+    background: white;
+}
+h1{
+    color: green;
+    height: 50px;
+    font-weight: 700;
+    font-family: monospace;
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+#lab{
+    color: white;
+    font-weight: 500;
+    font-family: monospace;
+    font-size: 32px;
+    padding: 10px;
+}

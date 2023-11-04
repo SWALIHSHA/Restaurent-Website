@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='order-ds.css') }}">
+</head>
+<body>
+    <header>
+        <div class="head">
+            <a class="logo">Sage & Salt</a>
+            <nav>
+                
+                <a href="{{ url_for('index') }}">Home</a>
+                <a href="{{ url_for('menu') }}">Menu</a>
+                <a href="{{ url_for('contact') }}">Contact us</a>
+                <a href="{{ url_for('contact') }}">Help</a>
+            </nav> 
+        </div>
+
+    </header>
+    <div class="sec">
+        <section id="contact">
+  
+            
+            
+            <div class="contact-wrapper">
+            
+            <!-- Left contact page -->
+            <h1 class="section-header">Enter Your Details</h1>
+          
+              
+              <form id="contact-form" class="form-horizontal" role="form">
+               
+                <div class="nam">
+                    <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+                </div>
+                <br>
+                <div class="nam">
+                    <input type="tel" class="form-control" id="num" placeholder="Mobile Number" name="number"  value="" required>
+                </div>
+                <br>
+                <div class="nam">
+                    <input type="text" class="form-control " id="add" placeholder="Address" name="Address" value="" required>
+                 
+                </div>
+                <br>
+                <div class="sa">
+                    <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" hidden=true required>
+                </div>
+                <br>
+                <button class="butt" id="submit"  onclick="submitData()">Order</button>
+                <br>
+                <br>
+                br
+                <label for="" id="lab" hidden="true"> order placed  successfully</label>
+                  
+                 
+
+                
+              </form>
+            
+        </section>
+
+    </div>
+
+    <script>
+        let popup = document.getElementById("popup");
+
+        function submitData(){
+            document.getElementById("lab").hidden = false
+
+            document.getElementById("name").value = ""
+            document.getElementById("num").value = ""
+            document.getElementById("add").value = ""
+
+           
+
+        }
+    </script>
+
+    
+</body>
+</html>
