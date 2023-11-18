@@ -1,5 +1,4 @@
 DROP TABLE IF EXISTS dishes;
-DROP TABLE IF EXISTS test;
 
 CREATE TABLE dishes (
     id INTEGER,

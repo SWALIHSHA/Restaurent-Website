@@ -30,11 +30,23 @@ def init_db():
     with current_app.open_resource('schema.sql') as schema:
         db.executescript(schema.read().decode('utf8'))
 
-@click.command('init-db')
+
+
+@click.command('init-menu')
 def init_db_cmd():
     init_db()
-    click.echo('Reset all tables!')
+    click.echo('Reset menu table!')
 
+def reset_order_table():
+    db = get_db()
+
+    with current_app.open_resource('order_table_schema.sql') as schema:
+        db.executescript(schema.read().decode('utf8'))
+
+@click.command('reset-order-table')
+def reset_order_table_cmd():
+    reset_order_table()
+    click.echo("Reset order details!")
 
 
 def create_app():
@@ -42,5 +54,6 @@ def create_app():
 
     app.teardown_appcontext(close_db)
     app.cli.add_command(init_db_cmd)
+    app.cli.add_command(reset_order_table_cmd)
 
     return app
